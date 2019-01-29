@@ -1,8 +1,7 @@
-Australian Government Design System - Starter
+NSW Government Design System - Starter
 ==========================
 
-> Get started with full page templates using the Australian Government Design System.
-
+> Get started with full page templates using the Australian Government Design System. This is an extension of the Australian Government Design System.
 ## Templates
 
 Browse full page templates using the Australian Government Design System.
@@ -50,7 +49,7 @@ In your directory you have a `package.json` file. This file points to dependenci
 
 After `npm install` [Pancake](https://github.com/govau/pancake) is ran, this checks that your dependencies work together and creates the `docs/js/script.min.js` and `src/sass/_uikit.scss`.
 
-The `src/sass/main.scss` imports the generated `_uikit.scss`. You shouldn't touch the `_uikit.scss` file as it is generated, but feel free to change the `main.scss` file. 
+The `src/sass/main.scss` imports the generated `_uikit.scss`. You shouldn't touch the `_uikit.scss` file as it is generated, but feel free to change the `main.scss` file.
 
 When the user runs `npm run build` or `npm run watch` we use [node-sass]("https://www.npmjs.com/package/node-sass?activeTab=versions") to convert the `src/sass/main.scss` file into the `docs/css/main.css` file. [Autoprefixer]("https://www.npmjs.com/package/autoprefixer") is ran after compilation to add vendor prefixes to the `main.css` file.
 
@@ -58,10 +57,24 @@ When the user runs `npm run build` or `npm run watch` we use [node-sass]("https:
 
 This set up allows you to modify the variables in the Design System file from the `main.scss` file. You can add your own colour scheme, or change the typography and spacing. Tweaks to the components or additional ones should be added below the import of `_uikit.scss`. Changes to these files will be injected into your browser so you don’t even need to refresh thanks to [Browser Sync](https://www.browsersync.io/).
 
-The `docs` folder in the contains all the files required to publish a website. The `index.html` file references the `main.css` file and `script.min.js` assets to generate the page. We name the folder `docs` because [github pages](https://pages.github.com/) uses the docs folder to host static websites. 
+The `docs` folder in the contains all the files required to publish a website. The `index.html` file references the `main.css` file and `script.min.js` assets to generate the page. We name the folder `docs` because [github pages](https://pages.github.com/) uses the docs folder to host static websites.
 
 
 **[⬆ back to top](#contents)**
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+## What is included
+
+This is an extension of the Australian Government Design System - Starter.
+
+This project includes the NSW Government set colours, font ( Gotham Book ) and header logo assets.
+
+It includes a separate NSW core and NSW header component.
+
+If you are using the dark theme for the header, please replace the logo image URL in the header HTML markup to : src="../assets/img/header-logo-nsw-black.png"
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------

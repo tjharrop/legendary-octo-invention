@@ -1,7 +1,7 @@
 {
-	"name": "design-system-starter",
+	"name": "nsw-design-system-starter",
 	"version": "1.1.1",
-	"description": "The Australian Government Design System Starter Pack",
+	"description": "The NSW Government Design System Starter Pack",
 	"scripts": {
 		"build:autoprefix": "postcss docs/css/main.css -u autoprefixer -r",
 		"build:css": "node-sass --output-style compressed src/sass/main.scss docs/css/main.css",
@@ -55,12 +55,11 @@
 		"@gov.au/buttons": "latest",
 		"@gov.au/callout": "latest",
 		"@gov.au/control-input": "latest",
-		"@gov.au/core": "latest",
 		"@gov.au/cta-link": "latest",
 		"@gov.au/direction-links": "latest",
 		"@gov.au/footer": "latest",
 		"@gov.au/grid-12": "latest",
-		"@gov.au/header": "latest",
+		"@digital.gov/header": "latest",
 		"@gov.au/headings": "latest",
 		"@gov.au/inpage-nav": "latest",
 		"@gov.au/keyword-list": "latest",
@@ -74,6 +73,7 @@
 		"@gov.au/skip-link": "latest",
 		"@gov.au/tags": "latest",
 		"@gov.au/text-inputs": "latest",
+		"@digital.gov/core": "latest",
 		"autoprefixer": "^9.0.1",
 		"node-sass": "^4.9.2",
 		"postcss-cli": "^6.0.0"
@@ -97,6 +97,7 @@
 			"location": false,
 			"name": false
 		},
+		"org": "@digital.nsw @gov.au",
 		"sass": {
 			"modules": false,
 			"location": "src/sass/",

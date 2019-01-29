@@ -59,7 +59,7 @@
 		"@gov.au/direction-links": "latest",
 		"@gov.au/footer": "latest",
 		"@gov.au/grid-12": "latest",
-		"@digital.gov/header": "latest",
+		"@digital.nsw/header": "latest",
 		"@gov.au/headings": "latest",
 		"@gov.au/inpage-nav": "latest",
 		"@gov.au/keyword-list": "latest",
@@ -73,7 +73,7 @@
 		"@gov.au/skip-link": "latest",
 		"@gov.au/tags": "latest",
 		"@gov.au/text-inputs": "latest",
-		"@digital.gov/core": "latest",
+		"@digital.nsw/core": "latest",
 		"autoprefixer": "^9.0.1",
 		"node-sass": "^4.9.2",
 		"postcss-cli": "^6.0.0"

@@ -67,7 +67,7 @@ This project includes the NSW Government set colours, font ( Gotham Book ) and h
 
 It includes a separate NSW core and NSW header component.
 
-If you are using the dark theme for the header, please replace the logo image URL in the header HTML markup to : src="../assets/img/header-logo-nsw-black.png"
+If you are using the dark theme for the header, please replace the logo image URL in the header HTML markup to : `src="../assets/img/header-logo-nsw-black.png"`
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -80,4 +80,4 @@ Copyright (c) Commonwealth of Australia. With the exception of the Commonwealth 
 
 **[⬆ back to top](#contents)**
 
-# };
+#

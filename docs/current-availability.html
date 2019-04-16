@@ -81,121 +81,34 @@
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-12">
-						<h2>About your children</h2>
+						<h2>Your current child care</h2>
+						<p>If you've had trouble finding out of schoolhours child care in the past, please check all that apply</p>
 						<form>
 
+							<!--CHECK OPTIONS-->
 							<div class="form-item">
-								<label for="children" class="label--block">Child's age</label>
-								<input class="au-text-input" name="children" id="children">
-							</div>
 
-							<div class="row">
-								<div class="form-item col-xs-15 col-sm-6">
-									<br><br>
-									<label for="help-comment" class="au-control-input au-control-input--block"> Which school does this child go to?</label>
-									<br>
-									<textarea class="au-text-input au-text-input--block" name="help-comment" id="help-comment" ></textarea>
-								</div>
-							</div>
+								<label class="au-control-input au-control-input--block">
+									<input class="au-control-input__input" type="checkbox" name="referral" value="google">
+									<span class="au-control-input__text">Nobody provides out of school hours care in my area</span>
+								</label>
 
-							<h2>Which days do you need care?</h2>
+								<label class="au-control-input au-control-input--block">
+									<input class="au-control-input__input" type="checkbox" name="referral" value="website">
+									<span class="au-control-input__text">There are no spaces available at my local out of school hours care provider</span>
+								</label>
 
-							<div class="form-item">
-								<div class="row">
-									<div class="col-md-2 col-sm-5 col-xs-12">
-										<br><br>
-										<label class="label--block"><strong>Monday</strong></label>
-										<br>
-										<div class="form-item">
-											<label class="au-control-input au-control-input--block">
-												<input class="au-control-input__input empty-required" type="checkbox" name="hours" value="mon-am" required>
-												<span class="au-control-input__text">Morning</span>
-											</label>
+								<label class="au-control-input au-control-input--block">
+									<input class="au-control-input__input" type="checkbox" name="referral" value="website">
+									<span class="au-control-input__text">I don't want to send my children to different places</span>
+								</label>
 
-											<label class="au-control-input au-control-input--block">
-												<input class="au-control-input__input empty-required" type="checkbox" name="hours" value="mon-pm" required>
-												<span class="au-control-input__text">Afternoon</span>
-											</label>
-										</div>
-									</div>
-									<div class="col-md-2 col-sm-5 col-xs-12">
-										<br><br>
-										<label class="label--block">Tuesday</label>
-										<br>
-										<div class="form-item">
-											<label class="au-control-input au-control-input--block">
-												<input class="au-control-input__input empty-required" type="checkbox" name="hours" value="tue-am" required>
-												<span class="au-control-input__text">Morning</span>
-											</label>
-
-											<label class="au-control-input au-control-input--block">
-												<input class="au-control-input__input empty-required" type="checkbox" name="hours" value="tue-pm" required>
-												<span class="au-control-input__text">Afternoon</span>
-											</label>
-										</div>
-									</div>
-									<div class="col-md-2 col-sm-5 col-xs-12">
-										<br><br>
-										<label class="label--block">Wednesday</label>
-										<br>
-										<div class="form-item">
-											<label class="au-control-input au-control-input--block">
-												<input class="au-control-input__input empty-required" type="checkbox" name="hours" value="mon-am" required>
-												<span class="au-control-input__text">Morning</span>
-											</label>
-
-											<label class="au-control-input au-control-input--block">
-												<input class="au-control-input__input empty-required" type="checkbox" name="hours" value="mon-pm" required>
-												<span class="au-control-input__text">Afternoon</span>
-											</label>
-										</div>
-									</div>
-									<div class="col-md-2 col-sm-5 col-xs-12">
-										<br><br>
-										<label class="label--block">Thursday</label>
-										<br>
-										<div class="form-item">
-											<label class="au-control-input au-control-input--block">
-												<input class="au-control-input__input empty-required" type="checkbox" name="hours" value="mon-am" required>
-												<span class="au-control-input__text">Morning</span>
-											</label>
-
-											<label class="au-control-input au-control-input--block">
-												<input class="au-control-input__input empty-required" type="checkbox" name="hours" value="mon-pm" required>
-												<span class="au-control-input__text">Afternoon</span>
-											</label>
-										</div>
-									</div>
-									<div class="col-md-2 col-sm-5 col-xs-12">
-										<br><br>
-										<label class="label--block">Friday</label>
-										<br>
-										<div class="form-item">
-											<label class="au-control-input au-control-input--block">
-												<input class="au-control-input__input empty-required" type="checkbox" name="hours" value="fri-am" required>
-												<span class="au-control-input__text">Morning</span>
-											</label>
-
-											<label class="au-control-input au-control-input--block">
-												<input class="au-control-input__input empty-required" type="checkbox" name="hours" value="fri-pm" required>
-												<span class="au-control-input__text">Afternoon</span>
-											</label>
-										</div>
-									</div>
-								</div>
-								<div class="form-item">
-									<br>
-									<label class="au-control-input au-control-input--block">
-										<input class="au-control-input__input" type="checkbox" name="referral" value="website">
-										<span class="au-control-input__text">Check all</span>
-									</label>
-								</div>
 							</div>
 
 							<!--FORM SUBMIT BUTTON-->
 							<div class="form-item">
-								<a href="current-availability.html" class="au-btn">
-								  Next step
+								<a href="completed.html" class="au-btn">
+								  Finish
 								</a>
 							</div>
 						</form>

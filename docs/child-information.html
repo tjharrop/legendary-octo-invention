@@ -185,7 +185,7 @@
 								<div class="form-item">
 									<br>
 									<label class="au-control-input au-control-input--block">
-										<input class="au-control-input__input" type="checkbox" name="referral" value="website">
+										<input class="au-control-input__input" type="checkbox" name="hours" value="website" onClick="toggle(this)">
 										<span class="au-control-input__text">Check all</span>
 									</label>
 								</div>
@@ -225,6 +225,13 @@
 
 	<!-- The javascript from pancake to open and close side nav on desktop -->
 	<script type="text/javascript" src="js/script.min.js"></script>
+	<script language="JavaScript">
+	function toggle(source) {
+	  checkboxes = document.getElementsByName('hours');
+	  for(var i=0, n=checkboxes.length;i<n;i++) {
+	    checkboxes[i].checked = source.checked;
+	  }
+	}	</script>
 </body>
 
 </html>

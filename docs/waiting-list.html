@@ -25,6 +25,9 @@
 	<link rel="icon" href="assets/favicons/favicon.ico">
 	<link type="text/css" rel="stylesheet" href="css/main.css">
 
+	<!-- Custom Styles -->
+	<link rel="stylesheet" type="text/css" href="css/additional.css">
+
 	<!-- These are shivs to help modern html work in older internet explorer browsers -->
 	<!--[if lt IE 9]>
 		<script>
@@ -80,163 +83,41 @@
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-12">
-						<h2>What kind of care are you looking for?</h2>
+						<h2>Your wait list situation</h2>
 						<form>
 
-							<!--CHECK OPTIONS-->
+							<div>
+							<p>Are you currently on a wait list with any providers?</p>
+							</div>
+
+							<label class="au-control-input">
+								<input class="au-control-input__input" type="radio" name="radio-ex">
+								<span class="au-control-input__text" id="yes-more-kids">Yes</span>
+							</label>
+							<label class="au-control-input">
+								<input class="au-control-input__input" type="radio" name="radio-ex" checked>
+								<span class="au-control-input__text">No</span>
+							</label>
+							<br>
+							<br>
+							<br>
+
+							<!-- EXTRA QUESTION FOR YES ANSWER -->
 							<div class="form-item">
-										<label for="children" class="label--block">What kind of care are you looking for?</label>
-										<br><br>
-											<label class="au-control-input">
-											<input class="au-control-input__input" type="checkbox" name="radio-ex">
-											<span class="au-control-input__text">Care at school</span>
-											</label>
-											<br>
-											<label class="au-control-input">
-											<input class="au-control-input__input" type="checkbox" name="radio-ex" checked>
-											<span class="au-control-input__text">External Care</span>
-											</label>
-											<br>
-											<label class="au-control-input">
-											<input class="au-control-input__input" type="checkbox" name="radio-ex">
-											<span class="au-control-input__text">Family day care</span>
-											</label>
-											<br>
-											<label class="au-control-input">
-											<input class="au-control-input__input" type="checkbox" name="radio-ex" checked>
-											<span class="au-control-input__text">Extracurricular activities</span>
-											</label>
-											<br>
-											<label class="au-control-input">
-											<input class="au-control-input__input" type="checkbox" name="radio-ex">
-											<span class="au-control-input__text">Time-share with other parents</span>
-											</label>
-											<br>
-											<label class="au-control-input">
-											<input class="au-control-input__input" type="checkbox" name="radio-ex" checked>
-											<span class="au-control-input__text">Paid home care</span>
-											</label>
+								<label for="how" class="label--block">Which provder(s) are you on a wait list with?</label>
+								<input class="au-text-input" name="howManyChildren" id="howManyChildren">
+							</div>
 
-								</div>
+							<div class="form-item">
+								<label for="postcode" class="label--block">How long have you been on the wait list?</label>
+								<input class="au-text-input" name="postcode" id="postcode">
+							</div>
 
-									<div class="form-item">
-												<label for="children" class="label--block">When do you need care to start?</label>
-												<br><br>
-													<label class="au-control-input">
-													<input class="au-control-input__input" type="radio" name="radio-ex1">
-													<span class="au-control-input__text">Immediately</span>
-													</label>
-													<br>
-													<label class="au-control-input">
-													<input class="au-control-input__input" type="radio" name="radio-ex1" checked>
-													<span class="au-control-input__text">Next term</span>
-													</label>
-													<br>
-													<label class="au-control-input">
-													<input class="au-control-input__input" type="radio" name="radio-ex1">
-													<span class="au-control-input__text">Next year</span>
-													</label>
-
-										</div>
-
-										<p>Which extra days do you need care?</p>
-
-										<div class="form-item">
-											<div class="row">
-												<div class="col-md-2 col-sm-5 col-xs-12">
-													<br><br>
-													<label class="label--block"><strong>Monday</strong></label>
-													<br>
-													<div class="form-item">
-														<label class="au-control-input au-control-input--block">
-															<input class="au-control-input__input empty-required" type="checkbox" name="hours" value="mon-am" required>
-															<span class="au-control-input__text">Morning</span>
-														</label>
-
-														<label class="au-control-input au-control-input--block">
-															<input class="au-control-input__input empty-required" type="checkbox" name="hours" value="mon-pm" required>
-															<span class="au-control-input__text">Afternoon</span>
-														</label>
-													</div>
-												</div>
-												<div class="col-md-2 col-sm-5 col-xs-12">
-													<br><br>
-													<label class="label--block">Tuesday</label>
-													<br>
-													<div class="form-item">
-														<label class="au-control-input au-control-input--block">
-															<input class="au-control-input__input empty-required" type="checkbox" name="hours" value="tue-am" required>
-															<span class="au-control-input__text">Morning</span>
-														</label>
-
-														<label class="au-control-input au-control-input--block">
-															<input class="au-control-input__input empty-required" type="checkbox" name="hours" value="tue-pm" required>
-															<span class="au-control-input__text">Afternoon</span>
-														</label>
-													</div>
-												</div>
-												<div class="col-md-2 col-sm-5 col-xs-12">
-													<br><br>
-													<label class="label--block">Wednesday</label>
-													<br>
-													<div class="form-item">
-														<label class="au-control-input au-control-input--block">
-															<input class="au-control-input__input empty-required" type="checkbox" name="hours" value="mon-am" required>
-															<span class="au-control-input__text">Morning</span>
-														</label>
-
-														<label class="au-control-input au-control-input--block">
-															<input class="au-control-input__input empty-required" type="checkbox" name="hours" value="mon-pm" required>
-															<span class="au-control-input__text">Afternoon</span>
-														</label>
-													</div>
-												</div>
-												<div class="col-md-2 col-sm-5 col-xs-12">
-													<br><br>
-													<label class="label--block">Thursday</label>
-													<br>
-													<div class="form-item">
-														<label class="au-control-input au-control-input--block">
-															<input class="au-control-input__input empty-required" type="checkbox" name="hours" value="mon-am" required>
-															<span class="au-control-input__text">Morning</span>
-														</label>
-
-														<label class="au-control-input au-control-input--block">
-															<input class="au-control-input__input empty-required" type="checkbox" name="hours" value="mon-pm" required>
-															<span class="au-control-input__text">Afternoon</span>
-														</label>
-													</div>
-												</div>
-												<div class="col-md-2 col-sm-5 col-xs-12">
-													<br><br>
-													<label class="label--block">Friday</label>
-													<br>
-													<div class="form-item">
-														<label class="au-control-input au-control-input--block">
-															<input class="au-control-input__input empty-required" type="checkbox" name="hours" value="fri-am" required>
-															<span class="au-control-input__text">Morning</span>
-														</label>
-
-														<label class="au-control-input au-control-input--block">
-															<input class="au-control-input__input empty-required" type="checkbox" name="hours" value="fri-pm" required>
-															<span class="au-control-input__text">Afternoon</span>
-														</label>
-													</div>
-												</div>
-											</div>
-											<div class="form-item">
-												<br>
-												<label class="au-control-input au-control-input--block">
-													<input class="au-control-input__input" type="checkbox" name="hours" value="website" onClick="toggle(this)">
-													<span class="au-control-input__text">Check all</span>
-												</label>
-											</div>
-										</div>
 
 							<!--FORM SUBMIT BUTTON-->
 							<div class="form-item">
-								<a href="extra-hours.html" class="au-btn">
-								  Next
+								<a href="child-information.html" class="au-btn">
+								  Next step
 								</a>
 							</div>
 						</form>
@@ -267,6 +148,10 @@
 
 	<!-- The javascript from pancake to open and close side nav on desktop -->
 	<script type="text/javascript" src="js/script.min.js"></script>
+
+	<!-- Custom Javascript -->
+	<script src="js/custom.js"></script>
+
 </body>
 
 </html>

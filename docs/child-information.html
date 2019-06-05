@@ -89,12 +89,47 @@
 
 							<div class="form-item">
 										<label for="children" class="label--block">What shcool year is your child in now?</label>
-										<input class="au-text-input" name="children" id="children">
 										<br><br>
-										<label class="au-control-input au-control-input--block">
-											<input class="au-control-input__input empty-required" type="checkbox" name="next-year" value="mon-pm" required>
-											<span class="au-control-input__text">My child starts school next year</span>
-										</label>
+						<label class="au-control-input">
+						<input class="au-control-input__input" type="radio" name="radio-ex">
+						<span class="au-control-input__text">My child starts school next year</span>
+						</label>
+						<br>
+						<label class="au-control-input">
+						<input class="au-control-input__input" type="radio" name="radio-ex" checked>
+						<span class="au-control-input__text">Kindergarten</span>
+						</label>
+						<br>
+						<label class="au-control-input">
+						<input class="au-control-input__input" type="radio" name="radio-ex">
+						<span class="au-control-input__text">1</span>
+						</label>
+						<br>
+						<label class="au-control-input">
+						<input class="au-control-input__input" type="radio" name="radio-ex" checked>
+						<span class="au-control-input__text">2</span>
+						</label>
+						<br>
+						<label class="au-control-input">
+						<input class="au-control-input__input" type="radio" name="radio-ex">
+						<span class="au-control-input__text">3</span>
+						</label>
+						<br>
+						<label class="au-control-input">
+						<input class="au-control-input__input" type="radio" name="radio-ex" checked>
+						<span class="au-control-input__text">4</span>
+						</label>
+						<br>
+						<label class="au-control-input">
+						<input class="au-control-input__input" type="radio" name="radio-ex">
+						<span class="au-control-input__text">5</span>
+						</label>
+						<br>
+						<label class="au-control-input">
+						<input class="au-control-input__input" type="radio" name="radio-ex" checked>
+						<span class="au-control-input__text">6</span>
+						</label>
+
 								</div>
 
 							<div class="row">
@@ -115,8 +150,32 @@
 									</div>
 								</div>
 							</div>
+<h2>Current before and after school care</h2>
 
-							<h2>Which days do you need care?</h2>
+<div id="multiple-children">
+<p>Do you currently have before and/or after school care?</p>
+</div>
+
+<label class="au-control-input" id="yes-current-oosh">
+	<input class="au-control-input__input" type="radio" name="radio-ex">
+	<span class="au-control-input__text">Yes</span>
+</label>
+<label class="au-control-input">
+	<input class="au-control-input__input" type="radio" name="radio-ex" checked>
+	<span class="au-control-input__text">No</span>
+</label>
+<div id="current-oosh"><br><br>
+
+	<div class="row">
+		<div class="form-item col-xs-15 col-sm-6">
+			<div class="form-item">
+				<label for="children1" class="label--block">What kind of care do you currently have?</label>
+				<input class="au-text-input" name="children" id="children1" placeholder="">
+			</div>
+		</div>
+	</div>
+
+							<p>Which days do you currently have care?</p>
 
 							<div class="form-item">
 								<div class="row">
@@ -209,10 +268,10 @@
 									</label>
 								</div>
 							</div>
-
+</div><!-- current oosh -->
 							<!--FORM SUBMIT BUTTON-->
 							<div class="form-item">
-								<a href="current-availability.html" class="au-btn">
+								<br><br><a href="current-availability.html" class="au-btn">
 								  Next step
 								</a>
 							</div>
@@ -245,6 +304,14 @@
 	<!-- The javascript from pancake to open and close side nav on desktop -->
 	<script type="text/javascript" src="js/script.min.js"></script>
 	<script language="JavaScript">
+
+
+	document.getElementById('current-oosh').style.display = 'none';
+	document.getElementById('yes-current-oosh').onclick = function () {
+		document.getElementById('current-oosh').style.display = 'block';
+	};
+
+
 	function toggle(source) {
 	  checkboxes = document.getElementsByName('hours');
 	  for(var i=0, n=checkboxes.length;i<n;i++) {

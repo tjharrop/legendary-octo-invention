@@ -8,3 +8,10 @@ form #multiple-children {
 	margin-top: 0.3rem;
 
 }
+
+.optional-section{
+	display: none;
+}
+.hidden-section {
+	display: none;
+}
